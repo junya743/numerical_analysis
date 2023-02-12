@@ -10,12 +10,17 @@ def main():
     plt.xticks([0,2,4,6,8,10],['0','2','4','6','8','10'])
 
     y1 = x ** 1
+    y2 = x ** 2
+    y3 = x ** 3
 
     plt.xlabel('frequency',rotation=0)
     plt.ylabel('amplitude',rotation=90)
 
 
     plt.plot(x,y1,label='f(x) = x')
+    plt.plot(x,y2,label='f(x) = x^2')
+    plt.plot(x,y3,label='f(x) = x^3')
+
     plt.legend(loc='lower left')
 
     plt.grid()

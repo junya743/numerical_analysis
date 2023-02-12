@@ -9,13 +9,18 @@ def main():
 
     plt.xticks([0,2,4,6,8,10],['0','2','4','6','8','10'])
 
-    y1 = x ** 1
+    y1 = 1 ** x
+    y2 = 2 ** x
+    y3 = 3 ** x
 
     plt.xlabel('frequency',rotation=0)
     plt.ylabel('amplitude',rotation=90)
 
 
-    plt.plot(x,y1,label='f(x) = x')
+    plt.plot(x,y1,label='f(x) = 1^x')
+    plt.plot(x,y2,label='f(x) = 2^x')
+    plt.plot(x,y3,label='f(x) = 3^x')
+
     plt.legend(loc='lower left')
 
     plt.grid()
